@@ -675,7 +675,7 @@ async def auto_filter(client, msg, spoll=False):
         btn.append(
             [InlineKeyboardButton(text="🗓 1/1", callback_data="pages")]
         )
-    imdb = await get_poster(search, file=(files[0]).file_name) else None
+    imdb = await get_poster(search, file=(files[0]).file_name)
     TEMPLATE = settings['template']
     if imdb:
         cap = TEMPLATE.format(
